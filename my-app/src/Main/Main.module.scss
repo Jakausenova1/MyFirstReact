@@ -1,0 +1,60 @@
+.All {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9DB79;
+    
+}
+
+.Img {
+    width: 55%;
+    padding-left: 20%;
+    padding-right: 33%;
+    background-color: #F9DB79;
+}
+
+.smallText {
+    position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	color: #FFFFFF;
+	font-size: 2.5em;
+	font-family: "Times new roman", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 7px;
+}
+
+.MainText {
+    position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	color: #FFFFFF;
+	font-size: 6em;
+	font-family: "Times new roman", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 20px;
+}
+
+.BannerLink {
+    position: absolute;
+	transform: translate(-50%, 50%);
+	border: 1px solid #FFFFFF;
+	padding: 8px;
+	top: 70%;
+	left: 50%;
+	width: 10%;
+	color: #FFFFFF;
+	font-size: 1.3em;
+	font-family: "Times new roman", sans-serif;
+	text-align: center;
+	font-weight: lighter;
+	text-decoration: none;
+    &:hover {
+        background-color: #4F6001;
+    }
+}
