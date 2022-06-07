@@ -7,6 +7,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #F9DB79;
 }
 
 .Img {
@@ -82,5 +83,15 @@
 .ImgIcon {
   width: 25px;
   height: 25px;
+}
+
+.SomePost {
+  font-size: 20px;
+  border: 1px solid #0000;
+  color: #000000;
+  font-family: "Times new roman", sans-serif;
+  border-color: #808080;
+  font-weight: lighter;
+  background-color: #C0C0C0;
 }
 /*# sourceMappingURL=Main.module.css.map */

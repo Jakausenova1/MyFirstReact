@@ -4,7 +4,7 @@ import m from "./Post.module.css"
 
 function Post(props) {
   return (
-    <div className={m.Posts}> 
+    <div> 
       {props.message}
     </div>
   );

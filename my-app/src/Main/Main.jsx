@@ -3,6 +3,7 @@ import m from "./Main.module.css";
 import img from "./Images/777.png";
 import itemImg from "./Images/5.png";
 import Post from "../Main/Posts/Post";
+import { NavLink } from "react-router-dom";
 
 function Main() {
   return (
@@ -11,7 +12,9 @@ function Main() {
         <img className={m.Img} alt={"mainImage"} src={img} />
         <p className={m.smallText}>Полезный</p>
         <h1 className={m.MainText}>Смузи</h1>
-        <p className={m.BannerLink}>Заказать</p>
+        <NavLink className={m.BannerLink} to="/order">
+          Заказать
+        </NavLink>
         <div className={m.NewsName}>
           <img className={m.ImgIcon} alt={"itemImage"} src={itemImg} />
           Новости:

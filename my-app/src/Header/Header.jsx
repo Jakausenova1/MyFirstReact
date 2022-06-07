@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import h from "./Header.module.css";
 
 function Header() {
@@ -7,10 +8,18 @@ function Header() {
       <div className={h.headerMain}>
         <p className={h.headerName}>Smoothies</p>
         <ul className={h.headerLinkContainer}>
-          <li className={h.headerLinks}>Главная</li>
-          <li className={h.headerLinks}>Каталог</li>
-          <li className={h.headerLinks}>О нас</li>
-          <li className={h.headerLinks}>To-Do list</li>
+          <NavLink className={h.headerLinks} to="/main">
+            Главная
+          </NavLink>
+          <NavLink className={h.headerLinks} to="/">
+            Каталог
+          </NavLink>
+          <NavLink className={h.headerLinks} to="/">
+            О нас
+          </NavLink>
+          <NavLink className={h.headerLinks} to="/">
+            To-Do list
+          </NavLink>
         </ul>
       </div>
     </div>
@@ -18,4 +27,3 @@ function Header() {
 }
 
 export default Header;
-
