@@ -12,7 +12,7 @@ function Main() {
         <img className={m.Img} alt={"mainImage"} src={img} />
         <p className={m.smallText}>Полезный</p>
         <h1 className={m.MainText}>Смузи</h1>
-        <NavLink className={m.BannerLink} to="/order">
+        <NavLink className={m.BannerLink} to="/dialogs">
           Заказать
         </NavLink>
         <div className={m.NewsName}>

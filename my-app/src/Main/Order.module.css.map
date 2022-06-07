@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,gBAAgB,EAAE,OAAO;CAC5B",
-    "sources": [
-        "Order.module.scss"
-    ],
-    "names": [],
-    "file": "Order.module.css"
-}

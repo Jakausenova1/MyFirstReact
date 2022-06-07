@@ -38,6 +38,10 @@
   color: #4F6001;
 }
 
+.headerLinks:active {
+  color: white;
+}
+
 .headerName {
   width: 50%;
   font-weight: 700;

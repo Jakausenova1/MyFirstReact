@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 import Post from "./Main/Posts/Post";
-import Order from "./Main/Order";
+import Dialogs from "./Main/Dialogs";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Post />
         <Routes>
           <Route path="/main" element={<Main />} />
-          <Route path="/order" element={<Order />} />
+          <Route path="/dialogs/*" element={<Dialogs />} />
         </Routes>
         <Footer />
       </>

@@ -8,7 +8,7 @@ function Header() {
       <div className={h.headerMain}>
         <p className={h.headerName}>Smoothies</p>
         <ul className={h.headerLinkContainer}>
-          <NavLink className={h.headerLinks} to="/main">
+          <NavLink className={h.headerLinks} to="/main" activeClassName={h.active}> 
             Главная
           </NavLink>
           <NavLink className={h.headerLinks} to="/">
