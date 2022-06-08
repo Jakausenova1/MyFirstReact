@@ -13,7 +13,7 @@ function Main() {
         <p className={m.smallText}>Полезный</p>
         <h1 className={m.MainText}>Смузи</h1>
         <NavLink className={m.BannerLink} to="/dialogs">
-          Заказать
+          Связаться
         </NavLink>
         <div className={m.NewsName}>
           <img className={m.ImgIcon} alt={"itemImage"} src={itemImg} />

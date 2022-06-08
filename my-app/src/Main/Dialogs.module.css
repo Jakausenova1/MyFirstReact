@@ -1,5 +1,5 @@
 .Dialogs {
-  background-color: #00FF7F;
+  background-color: #FFFFE0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 10fr;
@@ -11,7 +11,8 @@
 }
 
 .Dialog:active {
-  color: aliceblue;
+  color: black;
+  background-color: #fff;
 }
 
 .Dialog {
