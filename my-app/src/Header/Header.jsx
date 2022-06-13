@@ -6,19 +6,25 @@ function Header() {
   return (
     <div className={h.headerAll}>
       <div className={h.headerMain}>
-        <p className={h.headerName}>Smoothies</p>
+        <NavLink className={h.headerName} to="/main">
+          Smoothies
+        </NavLink>
         <ul className={h.headerLinkContainer}>
-          <NavLink className={h.headerLinks} to="/main" activeClassName={h.active}> 
+          <NavLink
+            className={h.headerLinks}
+            to="/main"
+            activeClassName={h.active}
+          >
             Главная
           </NavLink>
           <NavLink className={h.headerLinks} to="/">
             Каталог
           </NavLink>
           <NavLink className={h.headerLinks} to="/">
-            О нас
+            Новости
           </NavLink>
           <NavLink className={h.headerLinks} to="/">
-            To-Do list
+            Корзина
           </NavLink>
         </ul>
       </div>

@@ -6,7 +6,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #F9DB79;
+  background-color: #f9db79;
 }
 
 .headerMain {
@@ -35,7 +35,7 @@
 }
 
 .headerLinks:hover {
-  color: #4F6001;
+  color: #4f6001;
 }
 
 .headerLinks:active {
@@ -43,12 +43,14 @@
 }
 
 .headerName {
+  text-decoration: none;
+  color: #000;
   width: 50%;
   font-weight: 700;
   font-size: 26px;
 }
 
 .headerName:hover {
-  color: #4F6001;
+  color: #4f6001;
 }
 /*# sourceMappingURL=Header.module.css.map */

@@ -65,33 +65,4 @@
 .BannerLink:hover {
   background-color: #4F6001;
 }
-
-.NewsName {
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0%;
-  color: #4e1b1b;
-  font-size: 1.9em;
-  font-family: "Times new roman", sans-serif;
-}
-
-.ImgIcon {
-  width: 25px;
-  height: 25px;
-}
-
-.SomePost {
-  font-size: 20px;
-  border: 1px solid #0000;
-  color: #000000;
-  font-family: "Times new roman", sans-serif;
-  border-color: #808080;
-  font-weight: lighter;
-  background-color: #C0C0C0;
-}
 /*# sourceMappingURL=Main.module.css.map */
