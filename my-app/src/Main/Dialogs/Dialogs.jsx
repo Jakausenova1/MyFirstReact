@@ -3,6 +3,13 @@ import h from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
+let newPostElement = React.createRef();
+
+let addPost = () => {
+  let text = newPostElement.current.value;
+  alert(text);
+};
+
 function Dialogs(props) {
   let dialogsElements = props.state.dialogs.map((d) => (
     <DialogItem name={d.name} id={d.id} />
@@ -15,7 +22,13 @@ function Dialogs(props) {
   return (
     <div className={h.Dialogs}>
       <div className={h.DialogsItem}>{dialogsElements}</div>
-      <div className={h.Messages}>{messagesElements}</div>
+      <div className={h.Messages}>
+        {messagesElements}
+        <div>
+          <textarea ref={newPostElement}></textarea>
+          <button onClick={addPost}>Add</button>
+        </div>
+      </div>
     </div>
   );
 }
