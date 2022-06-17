@@ -1,21 +1,20 @@
 import React from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
-import Dialogs from "./Main/Dialogs";
+import Dialogs from "./Main/Dialogs/Dialogs";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
-      <>
-        <Header />
-        <Routes>
-          <Route path="/main" element={<Main />} />
-          <Route path="/dialogs/*" element={<Dialogs />} />
-        </Routes>
-        <Footer />
-      </>
+      <Header />
+      <Routes>
+        <Route path="/main/*" element={<Main />} />
+        <Route
+          path="/dialogs/"
+          element={<Dialogs state={props.state.ChatPage} />}
+        />
+      </Routes>
     </BrowserRouter>
   );
 }
