@@ -18,4 +18,12 @@ let State = {
   },
 };
 
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 5,
+    message: postMessage,
+  };
+  State.ChatPage.messages.push(newPost);
+};
+
 export default State;

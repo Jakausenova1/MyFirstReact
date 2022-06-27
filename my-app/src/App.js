@@ -12,7 +12,7 @@ function App(props) {
         <Route path="/main/*" element={<Main />} />
         <Route
           path="/dialogs/"
-          element={<Dialogs state={props.state.ChatPage} />}
+          element={<Dialogs state={props.state.ChatPage} addPost={props.addPost} />}
         />
       </Routes>
     </div>
