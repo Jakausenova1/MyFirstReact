@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render"
+
 let State = {
   ChatPage: {
     dialogs: [
@@ -20,10 +22,11 @@ let State = {
 
 export let addPost = (postMessage) => {
   let newPost = {
-    id: 5,
+    id: 6,
     message: postMessage,
   };
   State.ChatPage.messages.push(newPost);
+  rerenderEntireTree (State);
 };
 
 export default State;

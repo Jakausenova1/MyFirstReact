@@ -11,12 +11,13 @@ function Dialogs(props) {
   ));
 
   let messagesElements = props.state.messages.map((m) => (
-    <Message message={m.message} addPost={props.addPost}/>
+    <Message message={m.message} addPost={props.addPost} />
   ));
 
   let addPost = () => {
     let text = newPostElement.current.value;
     props.addPost(text);
+    newPostElement.current.value = "";
   };
 
   return (
